@@ -10,7 +10,7 @@ return (
     <h1 className="text-center text-white font-bold text-4xl uppercase pt-4"> Jason Place Holder API (User)</h1>
     <div className="flex flex-col text-white border-4  border-blue-400 w-[380px] pb-4 pt-4 mx-auto mt-8 ">  
     {res.map((user:any)=>(
-    <div className="flex w-[420px]">
+    <div key={user.id} className="flex w-[420px]">
 
       <p className="text-[20px] flex flex-col w-1/4 text-center ">{user.id}</p>
       <Link href={`${user.id}`}>
